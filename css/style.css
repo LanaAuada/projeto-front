@@ -1,0 +1,169 @@
+:root {
+    --color-primary: black;
+    --color-secundary: #323232;
+    --color-tres: white;
+    --color-quatro: #7a7a7a;
+    --color-cinco: #cfcfcf;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-cinco);
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-tres);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-tres);
+}
+
+nav a:hover {
+    color:var(--color-quatro);
+}
+
+.logo img {
+    display: block;
+    margin: auto;
+    margin-top: 3px;
+    max-width: 100%
+}
+
+.destaque {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--color-tres);
+}
+
+.destaque img{
+    max-width: 100%;
+}
+
+.frase-impacto {
+    text-align: center;
+    padding: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.produto {
+    border: 1px solid var(--color-tres);
+    padding: 10px;
+    text-align: center;
+    background-color: var(--color-tres);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    max-width: 90%;
+}
+
+.produto h3 {
+    margin: 10px 0;
+    font-size: 1.0em;
+    color: var(--color-secundary);
+}
+
+.produto p {
+    color: var(--color-secundary);
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.produto button {
+    background-color: var(--color-primary);
+    color:var(--color-tres);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.produto button:hover {
+    background-color: var(--color-quatro);
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--color-quatro);
+    padding: 80px;
+}
+
+.footer ul, p{
+    text-align: center;
+    list-style: none;
+}
+
+.footer img{
+    margin-left: 49.5%;
+}
+
+@media screen and (max-width: 425px) {
+    header h1 {
+        margin: 10px 0;
+        font-size: 1.4em;
+    }
+    .destaque img{
+        max-width: 80%;
+    }
+}
